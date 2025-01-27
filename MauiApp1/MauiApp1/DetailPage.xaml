@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.DetailPage"
+             xmlns:viewModel="clr-namespace:MauiApp1.ViewModel"
+             x:DataType="viewModel:DetailViewModel"
+             Title="DetailPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="{Binding Text}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <!--//when the completed button is clicked I want two things to happen the first is to add
+        //to the number of completed tasks and the second is to return to the home page and the third is to cross a line through the item-->
+        <Button Text="Completed"
+                Command="{Binding GoBackCommand}"
+                Clicked="CompletedTask_Button_Clicked"
+                >
+            
+        </Button>
+        <Button Text="Go Back"
+                Command="{Binding GoBackCommand}">
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿@page "/"
+@layout Layout.MainLayout
+@* You can specify different layouts for different pages using the @ main layout function *@
+@* built in component that let's us set the name of the home page *@
+<PageTitle>Home</PageTitle>
+
+<h1>Great job!</h1>
+
+Welcome to your new app.
+@* razor is a combination of html and C# *@
+@{
+	var amount = 1 + 1;
+}
+<Counter IncrementAmount="amount" />
+<Weather />
