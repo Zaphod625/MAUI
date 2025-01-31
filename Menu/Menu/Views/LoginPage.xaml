@@ -1,0 +1,12 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Menu.Views.LoginPage">
+    <StackLayout Padding="30">
+        <Label Text="Welcome! Please Log In"
+               FontSize="24"
+               HorizontalOptions="Center" />
+        <Entry Placeholder="Username" x:Name="UsernameEntry" />
+        <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry" />
+        <Button Text="Login" Clicked="OnLoginButtonClicked" />
+    </StackLayout>
+</ContentPage>

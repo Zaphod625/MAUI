@@ -1,0 +1,5 @@
+1. Seperate the add items page and the order page
+-Create two new pages one for the orders and one for the add items
+-Turn the homepage into a split between the two pages
+-Create a login page
+-sort out navigation between all the pages 

@@ -1,0 +1,5 @@
+Created
+->added the bin icon
+->create a menu
+->add prices for each item
+->added scroll bar
